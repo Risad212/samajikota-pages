@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+
+.head-title{
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+.box-container{
+    width: 910px;
+}
+.samajikota-box{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.single-icon {
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+.sabtn{
+    border: 1px solid #ddd;
+    padding: 18px 50px;
+    align-items: center;
+    border-radius: 37px;
+    background: #fff;
+}
+
+.sabtn h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+.single-icon svg {
+    width: 25px;
+}
+.single-icon h4{
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.samajikota-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    display: none;
+    width: 100%;
+    z-index: 2;
+    transition: left .3s ease;
+}
+.samajikota-box::before{
+    content: "";
+    position: absolute;
+    top: -29px;
+    right: 115px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #fff;
+}
+
