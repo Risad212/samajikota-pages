@@ -9,12 +9,12 @@ h1,h2,h3,h4,h5{
 }
 
 .head-title{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 800;
     padding-bottom: 5px;
 }
 .box-container{
-    width: 718px;
+    width: 565px;
 }
 .samajikota-box{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5{
 .single-icon {
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 30px;
 }
 
 .sabtn{
@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5{
 .single-icon h4{
     margin-left: 4px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: capitalize;
 }
 .samajikota-box{
@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5{
     content: "";
     position: absolute;
     top: -29px;
-    right: 115px;
+    right: 69px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 17px solid transparent;
