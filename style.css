@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5{
     padding-bottom: 5px;
 }
 .box-container{
-    width: 638px;
+    width: 600px;
 }
 .box-container a{
     color: #000;
@@ -53,13 +53,14 @@ h1,h2,h3,h4,h5{
 }
 .samajikota-box{
     position: absolute;
-    top: 0;
-    right: 0;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    display: none;
+    display: block;
     width: 100%;
     z-index: 2;
-    transition: left .3s ease;
+    transition:  .3s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    visibility: hidden;
 }
 .samajikota-box::before{
     content: "";
@@ -72,3 +73,7 @@ h1,h2,h3,h4,h5{
     border-bottom: 17px solid #fff;
 }
 
+.sabtn:hover + .box-container .samajikota-box{
+    visibility: visible;
+    transform: scaleY(1);
+}
