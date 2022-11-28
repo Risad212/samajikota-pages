@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5{
 .samajikota-box{
     position: absolute;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    display: block;
+    display: none;
     width: 100%;
     z-index: 2;
     transition: top .3s ease;
