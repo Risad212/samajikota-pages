@@ -54,13 +54,10 @@ h1,h2,h3,h4,h5{
 .samajikota-box{
     position: absolute;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    display: none;
+    display: block;
     width: 100%;
     z-index: 2;
     transition: top .3s ease;
-    /* transform: scaleY(0);
-    transform-origin: top;
-    visibility: hidden; */
 }
 .samajikota-box::before{
     content: "";
@@ -72,8 +69,6 @@ h1,h2,h3,h4,h5{
     border-top: 17px solid transparent;
     border-bottom: 17px solid #fff;
 }
-
-/* .sabtn:hover + .box-container .samajikota-box{
-    visibility: visible;
-    transform: scaleY(1);
-} */
+.removeicon{
+    width: 26px;
+}
