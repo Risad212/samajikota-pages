@@ -9,7 +9,7 @@
 
 
 $(document).ready(function(){
-    $(".sabtn").mouseover(function(){
+    $(".sabtn").hover(function(){
       $(".samajikota-box").slideToggle()
     });
 });
