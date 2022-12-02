@@ -58,6 +58,10 @@ h1,h2,h3,h4,h5{
     width: 100%;
     z-index: 2;
     transition: top 5s ease-in-out;
+    /* transition: all .6s ease-in-out;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top; */
 }
 .samajikota-box::before{
     content: "";
@@ -72,3 +76,9 @@ h1,h2,h3,h4,h5{
 .removeicon{
     width: 26px;
 }
+
+
+/* .sabtn:hover + .box-container .samajikota-box{
+    visibility: visible;
+    transform: scaleY(1);
+} */
