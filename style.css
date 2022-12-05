@@ -47,23 +47,19 @@ h1,h2,h3,h4,h5{
 .single-icon h4{
     margin-left: 4px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
     margin-right: 2px;
 }
-.samajikota-box{
+.collapse{
     position: absolute;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    display: none;
+    display: block;
     width: 100%;
     z-index: 2;
     transition: top 5s ease-in-out;
-    /* transition: all .6s ease-in-out;
-    visibility: hidden;
-    transform: scaleY(0);
-    transform-origin: top; */
 }
-.samajikota-box::before{
+.collapse::before{
     content: "";
     position: absolute;
     top: -29px;
@@ -78,7 +74,3 @@ h1,h2,h3,h4,h5{
 }
 
 
-/* .sabtn:hover + .box-container .samajikota-box{
-    visibility: visible;
-    transform: scaleY(1);
-} */
