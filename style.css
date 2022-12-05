@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 h1,h2,h3,h4,h5{
     margin: 0;
@@ -54,10 +55,16 @@ h1,h2,h3,h4,h5{
 .collapse{
     position: absolute;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    display: none;
+    /* right: 0; */
+    /* width: 35%; */
     width: 100%;
+    display: none;
     z-index: 2;
-    transition: top 5s ease-in-out;
+    transition: height .3s ease-in;
+    height: 0px;
+    padding: 20px;
+    height: 0px;
+    opacity: 0;
 }
 .collapse::before{
     content: "";
