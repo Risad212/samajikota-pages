@@ -1,14 +1,40 @@
-let sabtn = document.querySelector('.sabtn')
-let sbox = document.querySelector('.collapse')
-let remove = document.querySelector('.removeicon');
+
+// /* =====================================================
+// // 		toggle collapse button
+// ===================================================== */
+// $(document).ready(function(){
+//     $("#accodingBtn").click(function(){
+//       $("#accoding").slideToggle()
+//     });
+// });
+
+// $(document).ready(function(){
+//   $(".removeicon").click(function(){
+//     $("#accoding").slideToggle()
+//   });
+// });
+  
+
+// // toggle in outsie of accdoing
+// $(document).on('click', function(e) {
+//    const container = $("#accoding");
+  
+//    if(!container.is(e.target) && container.has(e.target).length === 0){
+//       container.hide();
+//    }
+// });
+
+$(document).ready(function(){
+  $(".accodingBtn").click(function(){
+    $("#accoding").show()
+  });
+});
 
 
-sabtn.addEventListener('click', () => {
-    sbox.style.display = 'block';
-    sbox.style.opacity = '1';
-    sbox.style.height = '550px';
-})
-
-
-
-
+window.addEventListener('mouseup',function(event){
+  var pol = document.querySelector('.collapse');
+  console.log(pol)
+  if(event.target != pol && event.target.parentNode != pol){
+      pol.style.display = 'none';
+  }
+}); 
