@@ -2,33 +2,20 @@
 // /* =====================================================
 // // 		toggle collapse button
 // ===================================================== */
-
-const selectOuterBox = document.querySelector('.outer');
-const box = document.querySelector('#accoding');
-
-
-$(document).ready(function(){
-  $(".sabtn").click(function(){
-    $("#accoding").slideToggle()
+$(document).ready(function () {
+  $('.sabtn').click(function (e) {
+      $('#accoding').stop(true).slideToggle();
+  });
+  $(document).click(function (e) {
+      if (!$(e.target).closest('.sabtn, #accoding').length) {
+          $('#accoding').stop(true).slideUp();
+      }
   });
 });
 
+// close icons box when click on remove Icon
 $(document).ready(function(){
   $(".removeicon").click(function(){
-    $("#accoding").slideToggle()
+    $("#accoding").slideUp()
   });
 });
-
-
-
-
-selectOuterBox.addEventListener('click', function(){
-    if(box.style.display = 'block'){
-       box.style.display = 'none'
-    }
-})
-
-
-
-
-
