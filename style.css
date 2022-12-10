@@ -29,6 +29,23 @@ h1,h2,h3,h4,h5{
     align-items: center;
     height: 30px;
 }
+.box:hover .collapse{
+   height: 600px;
+   padding-block: 20px;
+}
+.box{
+    position: relative;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -29px;
+    right: 69px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #fff;
+}
 .sabtn{
     border: 1px solid #ddd;
     padding: 3px 20px;
@@ -37,9 +54,8 @@ h1,h2,h3,h4,h5{
     background: #fff;
     font-size: 16px;
     font-weight: 700;
-    cursor: pointer;
+    cursor: pointer;   
 }
-
 .sabtn h4 {
     font-size: 14px;
     font-weight: 800;
@@ -59,10 +75,12 @@ h1,h2,h3,h4,h5{
     position: absolute;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
     width: 100%;
-    display: none;
-    transition: top .3s ease;
-    padding: 20px;
+    display: block;
+    transition: all .5s ease;
+    padding: 0 20px;
     background: #fff;
+    height: 0px;
+    overflow: hidden;
 }
 .collapse::before{
     content: "";
