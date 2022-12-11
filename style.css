@@ -3,65 +3,34 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 0;
     padding: 0;
-  }
-  
-  .head-title {
+}
+
+.head-title {
     font-size: 14px;
     font-weight: 800;
     padding-bottom: 5px;
-  }
-  .box-container {
+}
+.box-container {
     width: 600px;
-    position: absolute;
-    right: 0;
-    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
-  }
-  .box-container::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 60px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid #fff;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .box-container a {
+}
+.box-container a {
     color: #000;
     text-decoration: none;
-  }
-  .samajikota-box {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  }
-  .single-icon {
+}
+.single-icon {
     display: flex;
     align-items: center;
     height: 30px;
-  }
-  .box:hover .box-container::before {
-    opacity: 1;
-  }
-  .box:hover .collapse {
-    height: 600px;
-    padding-block: 20px;
-  }
-  .box {
-    width: fit-content;
-    position: relative;
-    margin-left: auto;
-  }
-  
-  .sabtn {
+}
+.sabtn {
     border: 1px solid #ddd;
     padding: 3px 20px;
     align-items: center;
@@ -70,33 +39,47 @@ body {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-  }
-  .sabtn h4 {
+}
+.sabtn h4 {
     font-size: 14px;
     font-weight: 800;
     margin: 0;
-  }
-  .single-icon svg {
+}
+.single-icon svg {
     width: 17px;
-  }
-  .single-icon h4 {
+}
+.single-icon h4 {
     margin-left: 4px;
     font-weight: 700;
     font-size: 13px;
     text-transform: capitalize;
     margin-right: 2px;
-  }
-  .collapse {
+}
+.collapse {
     width: 100%;
-    display: block;
-    transition: all 0.5s ease;
-    padding: 0 20px;
+    transition: transform 0.5s ease;
+    padding: 20px;
     background: #fff;
-    height: 0px;
-    overflow: hidden;
+    height: 600px;
     position: relative;
-    z-index: 1;
-  }
-  .removeicon {
+    display: block;
+    transform: scaleY(0);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    transform-origin: top;
+}
+.collapse::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 60px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #fff;
+}
+.sabtn:hover + .box-container .collapse {
+    transform: scaleY(1);
+}
+.removeicon {
     width: 26px;
-  }
+}
